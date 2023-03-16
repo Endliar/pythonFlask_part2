@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{% for col in college.values() %}
+<p>{{ col['достоинства'] | truncate(length = 15, killwords = True) }}</p>
+{% endfor %}
+<p>{{ college.values() | sum(attribute = 'Общая оценка') }}</p>
+<p>{{ (college.values() | min(attribute = 'Общая оценка'))['Общая оценка']}} </p>
+<p>{{ (college.values() | max(attribute = 'Общая оценка'))['Общая оценка']}} </p>
+
+<p>{{ (college.values() | list | first) }} </p>
+<p>{{ (college.values() | list | last) }} </p>
+
+<p>{{ (college.values() | list | random) }} </p>
+
+<p>{% for col in college.values() | list | sort(attribute = "Общая оценка") %} </p>
+<p>{{ col['Колледж'] }} </p>
+{% endfor %}
+
+</body>
+</html>
+
+
+
