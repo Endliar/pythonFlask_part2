@@ -1,0 +1,42 @@
+[
+    {
+        "where": "Italy, Rome",
+        "what": "Coliseum"
+    },
+    {
+        "where": "China, North China",
+        "what": "Great Wall"
+    },
+    {
+        "where": "Peru, Urubamba River Valley",
+        "what": "Machu Picchu"
+    },
+    {
+        "where": "Jordan, Wadi Al Arab Valley",
+        "what": "Petra"
+    },
+    {
+        "where": "India, Agra",
+        "what": "Taj Mahal"
+    },
+    {
+        "where": "Brasil, Rio-de-Janeiro",
+        "what": "Statue of Christ"
+    },
+    {
+        "where": "Mexico, Yucatan",
+        "what": "Chihcen Itza"
+    },
+    {
+        "where": "space",
+        "what": "Falcon"
+    },
+    {
+        "where": "ci.nsu.ru",
+        "what": "OOP"
+    },
+    {
+        "where": "ВКИ",
+        "what": "Ну типа"
+    }
+]

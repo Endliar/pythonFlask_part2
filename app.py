@@ -1,4 +1,5 @@
 import random
+import json
 
 import flask
 
@@ -56,6 +57,17 @@ def roses_roses():
         "Other": ["Engagement", "Topaz", "Miss Piggy"],
     }
     return flask.render_template('roses.html', roses=roses)
+
+
+@app.route('/search')
+def search_view():
+    return flask.render_template('search.html')
+
+
+@app.route('/dosearch/')
+def do_search_view():
+    s = flask.request.args.get('s')
+    return f'Это страница поиска. Выполняется поиск по "{s}"'
 
 
 if __name__ == "__main__":
